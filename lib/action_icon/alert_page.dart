@@ -10,8 +10,7 @@ class _AlertPageState extends State<AlertPage> {
     return Scaffold(
       body: Column(
         children: [
-          Icon(Icons.add_alert),
-          Text("Alert Page")
+          Center(child: Text("Development in progress"))
         ],
       )
     );

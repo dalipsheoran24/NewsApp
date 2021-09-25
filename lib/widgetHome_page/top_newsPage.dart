@@ -62,7 +62,7 @@ class _TopNewsPageState extends State<TopNewsPage> {
                               ),
                             ),
                             subtitle: Text(
-                                  topNewsList[index].description,maxLines: 1,
+                                  topNewsList[index]?.description ?? "",maxLines: 1,
                                   style: TextStyle(
                                     fontWeight: FontWeight.w300,
                                     color: Colors.black,
@@ -77,7 +77,7 @@ class _TopNewsPageState extends State<TopNewsPage> {
                                 borderRadius: BorderRadius.circular(8.0),
                                 image: DecorationImage(
                                   fit: BoxFit.fill,
-                                  image: NetworkImage(topNewsList[index].urlToImage),
+                                  image: NetworkImage(topNewsList[index]?.urlToImage ?? "https://image.shutterstock.com/image-vector/no-image-vector-symbol-missing-260nw-1310632172.jpg"),
 
                                 )
                               ),

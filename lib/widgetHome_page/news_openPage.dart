@@ -25,7 +25,7 @@ ScrollController myController = ScrollController();
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: NetworkImage(data.urlToImage)
+                    image: NetworkImage(data?.urlToImage ?? "https://image.shutterstock.com/image-vector/no-image-vector-symbol-missing-260nw-1310632172.jpg")
                   )
                 ),
               ),
@@ -44,7 +44,7 @@ ScrollController myController = ScrollController();
               Padding(
                 padding: const EdgeInsets.only(top: 20, bottom: 10,left: 8,right: 8),
                 child: Text(
-                  data.description,
+                  data?.description ?? "News details not available from API",
                   style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w300,

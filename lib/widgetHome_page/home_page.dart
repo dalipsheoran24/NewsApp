@@ -14,12 +14,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   final List<Tab> topTabs =<Tab>[
     Tab(text: 'Top News'),
     Tab(text: 'State'),
-    Tab(text: 'Sports'),
-    Tab(text: 'Life & Science'),
+    // Tab(text: 'Sports'),
+    // Tab(text: 'Life & Science'),
   ];
   @override
   void initState () {
-    _tabController = TabController(length: 4,initialIndex: 0, vsync: this)
+    _tabController = TabController(length: 2,initialIndex: 0, vsync: this)
       ..addListener((){
         setState(() {
 
@@ -62,8 +62,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         children: [
          TopNewsPage(),
           StatePage(),
-          Text("Sports"),
-          Text("Life & Science"),
+          // Text("Sports"),
+          // Text("Life & Science"),
 
         ],
       ),
