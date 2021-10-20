@@ -1,8 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
-
-import 'file:///C:/Users/hp/AndroidStudioProjects/dainik_bhaskar/lib/model/routs_widget.dart';
 import 'package:dainik_bhaskar/model/news_info.dart';
+import 'package:dainik_bhaskar/model/routs_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
